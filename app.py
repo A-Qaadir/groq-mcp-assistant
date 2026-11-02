@@ -17,7 +17,7 @@ from openai import OpenAI
 load_dotenv()
 ROOT = Path(__file__).parent
 SERVER = ROOT / "server.py"
-MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 SYSTEM_PROMPT = (
     "You are a concise assistant with access to personal notes and current weather. "
     "Save information only when the user clearly asks you to remember it. "
